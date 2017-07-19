@@ -16,6 +16,10 @@
   border: 0px;
 }
 
+.red-color {
+  color: #ff3333;
+}
+
 .menu-option {
   color: #fff;
 }
@@ -189,6 +193,13 @@
   .image {
     max-width: 100%;
   }
+
+  .image-description {
+    font-size: 20px;
+    text-align: center;
+    color: #ff3333;
+    padding-top: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -202,5 +213,9 @@
 
   .image {
     max-width: 100%;
+  }
+
+  .image-description {
+    display: none;
   }
 }

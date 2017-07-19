@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imgs/perfil.ico" type="image/x-icon" />
+    <script type="text/javascript">var submitted=false;</script>
   </head>
   <body>
     <nav class="menu navbar">
@@ -56,13 +57,13 @@
         <div class="item">
           <img src="imgs/revista_1.jpg" class="img-banner">
           <div class="carousel-caption">
-            <h3>Revista Cena</h3>
+            <h3 class="red-color">Revista Cena</h3>
           </div>
         </div>
       
         <div class="item">
           <img src="imgs/vassionne_logo.jpg" class="img-banner">
-          <div class="carousel-caption">
+          <div class="carousel-caption red-color">
             <h3>Vassionné</h3>
             <p>Escola de arte</p>
           </div>
@@ -90,6 +91,7 @@
                 <div class="text">Logos</div>
               </div>
             </div>
+            <p class="image-description">Logos</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 padding-top">
             <div class="container-image">
@@ -98,6 +100,7 @@
                 <div class="text">Convites</div>
               </div>
             </div>
+            <p class="image-description">Convites</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 padding-top">
             <div class="container-image">
@@ -106,6 +109,7 @@
                 <div class="text">Banners</div>
               </div>
             </div>
+            <p class="image-description">Banners</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 padding-top">
             <div class="container-image">
@@ -114,6 +118,7 @@
                 <div class="text">Camisas</div>
               </div>
             </div>
+            <p class="image-description">Camisas</p>
           </div>
         </div>
       </div>
@@ -130,7 +135,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 padding-top">
           <h4 class="media-heading">Meu nome é Caroline Gomes,</h4>
-          Sou estudante de Biomedicina na faculdade Veiga de Almeida, Rio de Janeiro. Fiz um curso de Design gráfico no SENAC por curiosidade e acabei me apaixonando, sempre que tenho tempo realizo trabalhos beneficiantes nessa área.  
+          <p class="padding-top">Sou estudante de Biomedicina na faculdade Veiga de Almeida, Rio de Janeiro. Fiz um curso de Design gráfico no SENAC por curiosidade e acabei me apaixonando. Além de ser freelancer, sempre que tenho tempo realizo trabalhos beneficiantes.</p>
         </div>
       </div>
     </div>
@@ -144,40 +149,44 @@
               <div class="container-image">
                 <img src="http://via.placeholder.com/600x600" alt="Avatar" class="image">
                 <div class="overlay">
-                  <div class="text">Convites</div>
+                  <div class="text">Trabalho 1</div>
                 </div>
               </div>
             </a>
+            <p class="image-description">Trabalho 1</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 padding-top">
             <a href="#" target="_blank">
               <div class="container-image">
                 <img src="http://via.placeholder.com/600x600" alt="Avatar" class="image">
                 <div class="overlay">
-                  <div class="text">Convites</div>
+                  <div class="text">Trabalho 2</div>
                 </div>
               </div>
             </a>
+            <p class="image-description">Trabalho 2</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 padding-top">
             <a href="#" target="_blank">
               <div class="container-image">
                 <img src="http://via.placeholder.com/600x600" alt="Avatar" class="image">
                 <div class="overlay">
-                  <div class="text">Convites</div>
+                  <div class="text">Trabalho 3</div>
                 </div>
               </div>
             </a>
+            <p class="image-description">Trabalho 3</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 padding-top">
             <a href="#" target="_blank">
               <div class="container-image">
                 <img src="http://via.placeholder.com/600x600" alt="Avatar" class="image">
                 <div class="overlay">
-                  <div class="text">Convites</div>
+                  <div class="text">Trabalho 4</div>
                 </div>
               </div>
             </a>
+            <p class="image-description">Trabalho 4</p>
           </div>
         </div>
       </div>
@@ -198,12 +207,12 @@
         <div class="col-md-2">
         </div>
         <div class="col-xs-12 col-md-5">
-          <form class="form-horizontal form-email" action="http://formspree.io/lucasvieira.dev@gmail.com" method="post"  id="contact_form">
+          <form class="form-horizontal form-email" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSdSXBoUzdN1OpDERPbGycVs4NB97SoW9kz9WJVqsfTynApYCQ/formResponse?" method="POST" name="gform" id="gform">
             <div class="form-group">
-              <input name="email" placeholder="E-Mail" class="form-control form-input" type="text">
+              <input id="entry.1012023459" name="entry.1012023459" placeholder="E-Mail" class="form-control form-input" type="email">
             </div>
             <div class="form-group">
-              <textarea class="form-control form-input" name="message" placeholder="Informe o motivo do seu contato..."></textarea>
+              <textarea id="entry.28207251" name="entry.28207251" class="form-control form-input" placeholder="Informe o motivo do seu contato..."></textarea>
             </div>
             <div class="form-group btn-send-group">
               <button type="submit" class="btn btn-send" >Enviar</button>
@@ -213,6 +222,7 @@
       </div>
     </div>
 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
     <footer class="footer padding">
       <div class="container">
@@ -222,11 +232,16 @@
 
     <script>
       $(document).on('click', '.menu-option', function(event){
-          event.preventDefault();
+        event.preventDefault();
 
-          $('html, body').animate({
-              scrollTop: $( $.attr(this, 'href') ).offset().top
-          }, 500);
+        $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+      });
+
+      $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Enviada com sucesso!!!');
       });
     </script>
   </body>
