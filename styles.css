@@ -1,0 +1,42 @@
+html {
+  background-color: #F5F5F5 ;
+}
+
+header, main, footer {
+  padding-left: 300px;  
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+  .pagination li a {
+    padding: 0 4px;
+  }
+}
+
+.fix-min-height {
+  min-height: 62px !important;
+}
+
+.line-height-to-center {
+  line-height: 42px !important;
+}
+
+.fix-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+.card img.materialized.active {
+    max-height: none;
+    object-fit: none;
+}
+
+.padding-bottom-1 {
+  padding-bottom: 1rem;
+}
+

@@ -1,0 +1,74 @@
+/* #*/ export const PERSON = `
+name:
+  first: Lucas
+  middle: Vieira
+  last: Miguel
+about: My name is Lucas Vieira Miguel, I'm 23 years old. I like sports, tattoos, tech, geek stuff, meet new people and other things. I'm an easy-going person, proactive and very persistent to make things done.
+I love to build great things that will help someone's life and I want to be a successful software engineer in the IT community.
+position: Software Developer
+
+birth:
+  year: 1994
+  location: Dublin
+
+experience:
+- company: Hangout With Us
+  position: Founder and Developer
+  timeperiod: November 2017 - Now
+  description: A startup that makes it easy to set up a meeting with friends (www.hangoutwithus.in).
+
+- company: B2W Digital
+  position: Developer
+  timeperiod: since September 2015 - August 2017
+  description: It's the biggest e-commerce company in latin america (www.americanas.com.br and www.submarino.com.br), and I worked in several microservices and some front-end applications.
+
+- company: TIVIT
+  position: Developer Intern
+  timeperiod: April 2015 - September 2015
+  description: Update and maintenance of a geolocation system (www.tivit.com).
+
+education:
+- degree: Analysis and systems development
+  timeperiod: March 2014 - September 2017
+  description: Bachelor's degree at Instituto INFNET.
+
+- degree: Accounting (Incomplete)
+  timeperiod: January 2012 - January 2014
+  description: Bachelor's degree at University of the state of Rio de Janeiro.
+
+- degree: Brasas English Course
+  timeperiod: January 2010 - January 2012
+  description: One of the best english schools in Brazil.
+
+# skill level goes 0 to 100
+skills:
+- name: Javascript
+  level: 85
+- name: HTML
+  level: 90
+- name: CSS
+  level: 70
+- name: Node.js
+  level: 85
+- name: React and Redux
+  level: 90
+- name: Golang
+  level: 80
+- name: Microservices and CI
+  level: 80
+- name: Ruby on Rails
+  level: 75
+- name: AWS
+  level: 70
+knowledge: Also proficient in English, REST, Linux, Elixir, Google Cloud, Docker, Functional Programming, Scrum, Angular and SQL.
+
+contact:
+  email: lucasvieira.dev@gmail.com
+  phone: 55 21 983563441
+  street: Dublin
+  city: Dublin
+  github: https://github.com/lucasvmiguel
+  # linkedin: https://www.linkedin.com/in/lucasvieiramiguel/
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
+lang: en
+`

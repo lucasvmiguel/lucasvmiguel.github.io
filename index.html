@@ -1,92 +1,102 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-<meta charset="UTF-8">
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1cb511d30d.js"></script>
+    <!--Import materialize.css-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-<title>RDoc Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-<script type="text/javascript">
-  var rdoc_rel_prefix = "./";
-</script>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue">
+        <span class="brand-logo">About me</span>
+        <ul id="slide-out" class="side-nav fixed">
+          <li>
+            <div class="user-view">
+              <a href="index.html">
+                <div class="background blue">
+                  <img style="height: 100%; opacity: 0.4;" src="imgs/profile_background.jpg">
+                </div>
+                <img src="imgs/id.jpg" class="circle" width="60">
+                <span class="white-text name">Lucas Vieira Miguel</span>
+                <span class="white-text email">lucasvieira.dev@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li class="active"><a href="index.html"><i class="material-icons">account_circle</i>About me</a></li>
+          <li><a href="skills.html"><i class="material-icons">tune</i>Skills</a></li>
+          <li><a href="experience.html"><i class="material-icons">business_center</i>Experience</a></li>
+          <li><a href="education.html"><i class="material-icons">school</i>Education</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
 
-<script src="./js/jquery.js"></script>
-<script src="./js/darkfish.js"></script>
-
-<link href="./css/fonts.css" rel="stylesheet">
-<link href="./css/rdoc.css" rel="stylesheet">
-
-
-
-<body id="top" role="document" class="file">
-<nav role="navigation">
-  <div id="project-navigation">
-    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
-  <h2>
-    <a href="./index.html" rel="home">Home</a>
-  </h2>
-
-  <div id="table-of-contents-navigation">
-    <a href="./table_of_contents.html#pages">Pages</a>
-    <a href="./table_of_contents.html#classes">Classes</a>
-    <a href="./table_of_contents.html#methods">Methods</a>
-  </div>
-</div>
-
-
-    <div id="search-section" role="search" class="project-section initially-hidden">
-  <form action="#" method="get" accept-charset="utf-8">
-    <div id="search-field-wrapper">
-      <input id="search-field" role="combobox" aria-label="Search"
-             aria-autocomplete="list" aria-controls="search-results"
-             type="text" name="search" placeholder="Search" spellcheck="false"
-             title="Type to search, Up and Down to navigate, Enter to load">
-    </div>
-
-    <ul id="search-results" aria-label="Search Results"
-        aria-busy="false" aria-expanded="false"
-        aria-atomic="false" class="initially-hidden"></ul>
-  </form>
-</div>
-
-  </div>
-
-  <div id="project-metadata">
+    <main>
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Description</span>
+              <p>My name is Lucas Vieira Miguel, I'm 23 years old. I like sports, tattoos, tech, geek stuff, meet new people and other things. I'm an easy-going person, proactive and very persistent to make things done.
+I love to build great things that will help someone's life and I want to be a successful software engineer in the IT community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Contact</span>
+              <ul class="collection">
+                <li class="collection-item avatar fix-min-height">
+                  <i class="material-icons circle blue">phone</i>
+                  <span class="title line-height-to-center">55 21 983563441</span>
+                </li>
+                <li class="collection-item avatar fix-min-height">
+                  <i class="material-icons circle blue">email</i>
+                  <span class="title line-height-to-center">lucasvieira.dev@gmail.com</span>
+                </li>
+                <li class="collection-item avatar fix-min-height">
+                  <i class="fa fa-github circle blue"></i>
+                  <span class="title line-height-to-center">github.com/lucasvmiguel</span>
+                </li>
+                <li class="collection-item avatar fix-min-height">
+                  <i class="fa fa-linkedin circle blue"></i>
+                  <span class="title line-height-to-center">linkedin.com/in/lucasvieiramiguel</span>
+                </li>
+                <li class="collection-item avatar fix-min-height">
+                  <i class="material-icons circle blue">language</i>
+                  <span class="title line-height-to-center">https://lucasvmiguel.github.io</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Place</span>
+              <iframe frameborder="0" style="border:0;width: 100%;height: 325px;"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB7twVbJL5LU219wLW5P_-AtRHM6i9bqU
+                  &q=Meier,Rio+de+Janeiro" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     
-    <div id="classindex-section" class="nav-section">
-  <h3>Class and Module Index</h3>
-
-  <ul class="link-list">
-  
-    <li><a href="./EdoolsSdk.html">EdoolsSdk</a>
-  
-    <li><a href="./EdoolsSdk/Course.html">EdoolsSdk::Course</a>
-  
-    <li><a href="./EdoolsSdk/EdoolsBase.html">EdoolsSdk::EdoolsBase</a>
-  
-    <li><a href="./EdoolsSdk/Invitation.html">EdoolsSdk::Invitation</a>
-  
-    <li><a href="./EdoolsSdk/Product.html">EdoolsSdk::Product</a>
-  
-    <li><a href="./EdoolsSdk/School.html">EdoolsSdk::School</a>
-  
-    <li><a href="./EdoolsSdk/Student.html">EdoolsSdk::Student</a>
-  
-  </ul>
-</div>
-
-  </div>
-</nav>
-
-<main role="main">
-<p>This is the API documentation for RDoc Documentation.
-</main>
-
-
-
-<footer id="validator-badges" role="contentinfo">
-  <p><a href="http://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
-  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
-</footer>
-
+    
+  </body>
+</html>
